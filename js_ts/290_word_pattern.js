@@ -3,6 +3,9 @@
  * @param {string} s
  * @return {boolean}
  */
+
+// LeetCode 290. Word Pattern in JavaScript
+
 var wordPattern = function (pattern, s) {
   // We split letters and words into string arrays
   const letters = pattern.split("");

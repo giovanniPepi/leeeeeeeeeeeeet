@@ -1,5 +1,7 @@
 class Solution {
 
+  // LeetCode 290. Word Pattern in Java
+
   public boolean wordPattern(String pattern, String s) {
 
     // Split words into an string array;
