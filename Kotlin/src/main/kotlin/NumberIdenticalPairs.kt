@@ -23,7 +23,7 @@ class NumberIdenticalPairs {
 		val map = hashMapOf<Int, Int>()
 		var identicalPairs = 0
 		for (num in nums) map[num] = map.getOrDefault(num, 0) + 1
-		for (f in map.values) identicalPairs += f * (f - 1 ) / 2
+		for (f in map.values) identicalPairs += f * (f - 1) / 2
 		return identicalPairs
 	}
 }
