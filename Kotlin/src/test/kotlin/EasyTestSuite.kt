@@ -63,4 +63,15 @@ class EasyTestSuite {
 		assertArrayEquals(doubleArrayOf(395.26, 251.798), convertTemperature.convertTemperature(122.11))
 	}
 
+	@Test
+	fun `Should return number of identical pairs`() {
+		val getIdenticalPairs = NumberIdenticalPairs()
+		assertEquals(4, getIdenticalPairs.numIdenticalPairs(intArrayOf(1,2,3,1,1,3)))
+		assertEquals(6, getIdenticalPairs.numIdenticalPairs(intArrayOf(1,1,1,1)))
+		assertEquals(0, getIdenticalPairs.numIdenticalPairs(intArrayOf(1,2,3)))
+
+	}
+
+
+
 }
