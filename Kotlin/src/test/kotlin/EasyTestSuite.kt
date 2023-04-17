@@ -85,4 +85,11 @@ class EasyTestSuite {
 		assertEquals(6, getIdenticalPairs.numIdenticalPairs(intArrayOf(1, 1, 1, 1)))
 		assertEquals(0, getIdenticalPairs.numIdenticalPairs(intArrayOf(1, 2, 3)))
 	}
+
+	@Test
+	fun `Should return the smallest even multiple`(){
+		val smallestEvenMultiple = SmallestEvenMultiple()
+		assertEquals(10, smallestEvenMultiple.smallestEvenMultiple(5))
+		assertEquals(6, smallestEvenMultiple.smallestEvenMultiple(6))
+	}
 }
