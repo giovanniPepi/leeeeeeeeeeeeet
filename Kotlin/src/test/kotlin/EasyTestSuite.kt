@@ -92,4 +92,22 @@ class EasyTestSuite {
 		assertEquals(10, smallestEvenMultiple.smallestEvenMultiple(5))
 		assertEquals(6, smallestEvenMultiple.smallestEvenMultiple(6))
 	}
+
+	@Test
+	fun `Should return the minimum sum from the pair`(){
+		val splitFour = SplitFourDigits()
+		assertEquals(52, splitFour.minimumSum(2932))
+		assertEquals(13, splitFour.minimumSum(4009))
+	}
+
+	@Test
+	fun `Should return subtract product and sum`(){
+		val exerciseClass = subtractProductAndSum()
+		assertEquals(15, exerciseClass.subtractProductAndSum(234))
+		assertEquals(21, exerciseClass.subtractProductAndSum(4421))
+		assertEquals(15, exerciseClass.efficientlySubtractProductAndSum(234))
+		assertEquals(21, exerciseClass.efficientlySubtractProductAndSum(4421))
+	}
+
+
 }
