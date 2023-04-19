@@ -109,5 +109,12 @@ class EasyTestSuite {
 		assertEquals(21, exerciseClass.efficientlySubtractProductAndSum(4421))
 	}
 
-
+	@Test
+	fun `Count the digits that divide a number`(){
+		val exerciseCountDigits = CounttheDigitsThatDivideaNumber()
+		assertEquals(0, exerciseCountDigits.countDigits(54))
+		assertEquals(1, exerciseCountDigits.countDigits(7))
+		assertEquals(2, exerciseCountDigits.countDigits(121))
+		assertEquals(4, exerciseCountDigits.countDigits(1248))
+	}
 }
