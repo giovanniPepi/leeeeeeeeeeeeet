@@ -2,7 +2,7 @@
 //https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 
 // First method uses the built-in language methods
-class subtractProductAndSum {
+class SubtractProductAndSum {
 	fun subtractProductAndSum(n: Int): Int {
 		val arrayNumbers = n.toString().map{it.toString().toInt()}.toIntArray()
 		val product = arrayNumbers.reduce {acc, i -> acc * i}
