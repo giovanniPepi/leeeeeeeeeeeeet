@@ -129,8 +129,11 @@ class EasyTestSuite {
 	}
 
 	@Test
-	fun `SumOddSubArray Test`(){
-		val exerciseSumOdd = SumOddSubarrays()
-		assertEquals(58, exerciseSumOdd.sumOddLengthSubarrays(intArrayOf(1,4,2 ,5, 3)))
+	fun `SumMultiples Test`(){
+		val exerciseSumMultiples = SumMultiples()
+		assertEquals(21, exerciseSumMultiples.sumOfMultiples(7))
+		assertEquals(40, exerciseSumMultiples.sumOfMultiples(10))
+		assertEquals(30, exerciseSumMultiples.sumOfMultiples(9))
+
 	}
 }
