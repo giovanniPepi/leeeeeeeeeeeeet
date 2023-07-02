@@ -134,6 +134,14 @@ class EasyTestSuite {
 		assertEquals(21, exerciseSumMultiples.sumOfMultiples(7))
 		assertEquals(40, exerciseSumMultiples.sumOfMultiples(10))
 		assertEquals(30, exerciseSumMultiples.sumOfMultiples(9))
+	}
+
+	@Test
+	fun `SumOdd test`(){
+		val exerciseSumOdd = SumOddLengthSubarrays()
+		assertEquals(58, exerciseSumOdd.sumOdd(intArrayOf(1,4,2,5,3)))
+		assertEquals(3, exerciseSumOdd.sumOdd(intArrayOf(1,2)))
+		assertEquals(66, exerciseSumOdd.sumOdd(intArrayOf(10, 11, 12)))
 
 	}
 }
